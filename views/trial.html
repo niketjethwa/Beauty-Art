@@ -1,0 +1,121 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <title>Document</title>
+
+<style>
+    .box {
+  width: 40%;
+  height: 200px;
+  background: orange;
+  border-radius: 2px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.a {
+  margin: 100vh auto 0 auto;
+}
+
+.b {
+  margin: 40vh auto 0 auto;
+}
+</style>
+</head>
+<body>
+    <h1>Using AOS to Add Animations</h1>
+    <h2>Basic Animation</h2>
+    <p>You need to scroll down to see the effect.</p>
+    <div class="box a" data-aos="fade-up">
+        <h2>Animated using <code>fade-up</code>.</h2>
+    </div>
+    <div class="box b" data-aos="flip-down">
+        <h2>Animated using <code>flip-down</code>.</h2>
+    </div>
+    <div class="box b" data-aos="zoom-in">
+        <h2>Animated using <code>zoom-in</code>.</h2>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html> -->
+
+<html>
+  <head>
+  <title>My Now Amazing Webpage</title>
+
+  <link rel="stylesheet" href="../slick-1.8.1/slick/slick.css">
+  
+  <style>
+    html, body{
+  background: #102131;
+}
+.slider{
+  width:400px;
+  margin:20px auto;
+  text-align: center;
+  padding:20px;
+  color:white;
+  /* .parent-slide{padding:15px;} */
+  /* img{display: block;margin:auto;} */
+}
+  </style>
+  </head>
+  <body>
+
+    <div class="slider">
+      <div class="slide">
+        <h1>slide 1</h1>
+      </div>
+      <div class="slide">
+        <h1>slide 2</h1>
+      </div>
+      <div class="slide">
+        <h1>slide 3</h1>
+      </div>
+      <div class="slide">
+        <h1>slide 4</h1>
+      </div>
+      <div class="slide">
+        <h1>slide 5</h1>
+      </div>
+    </div>
+
+
+    <script>
+      window.onload=function(){
+  $('.slider').slick({
+  autoplay:true,
+  // autoplaySpeed:1500,
+  arrows:true,
+  prevArrow:'<button type="button" class="slick-prev"></button>',
+  nextArrow:'<button type="button" class="slick-next"></button>',
+  centerMode:true,
+  slidesToShow:3,
+  slidesToScroll:2
+  });
+};
+
+    </script>
+  <!-- <script src="../slick-1.8.1/slick/slick.min.js"></script> -->
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  
+  <script src="../slick-1.8.1/slick/slick.js"></script>
+  </body>
+</html>

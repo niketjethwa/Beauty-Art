@@ -1,0 +1,396 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <title>Document</title>
+
+<style>
+    .box {
+  width: 40%;
+  height: 200px;
+  background: orange;
+  border-radius: 2px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.a {
+  margin: 100vh auto 0 auto;
+}
+
+.b {
+  margin: 40vh auto 0 auto;
+}
+</style>
+</head>
+<body>
+    <h1>Using AOS to Add Animations</h1>
+    <h2>Basic Animation</h2>
+    <p>You need to scroll down to see the effect.</p>
+    <div class="box a" data-aos="fade-up">
+        <h2>Animated using <code>fade-up</code>.</h2>
+    </div>
+    <div class="box b" data-aos="flip-down">
+        <h2>Animated using <code>flip-down</code>.</h2>
+    </div>
+    <div class="box b" data-aos="zoom-in">
+        <h2>Animated using <code>zoom-in</code>.</h2>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html> -->
+
+<html>
+  <head>
+  <title>My Now Amazing Webpage</title>
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+  
+  <link rel="stylesheet" href="../slick-1.8.1/slick/slick.css">
+  
+  <style>
+    
+.slider{
+  /* width:400px; */
+  height: max-content;
+  margin:20px auto;
+  text-align: center;
+  padding:20px;
+  color:white;
+}
+
+.carousel-caption {
+    position: initial;
+    z-index: 10;
+    /* padding: 5rem 8rem; */
+    color: rgba(78, 77, 77, 0.856);
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 2rem;
+    margin-top: -8%;
+    margin-left: 10%;
+}
+
+.carousel-caption p {
+    font-size: 19px;
+    color: #010A44;
+    line-height: 1.6;
+    margin-bottom: 46px;
+    text-align: initial;
+}
+
+
+.testimonial-padding {
+	padding-top: 70px;
+	padding-bottom: 100px;
+}
+
+.fix {
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.testimonial-padding {
+		padding-top: 80px;
+		padding-bottom: 100px;
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.testimonial-padding {
+		padding-top: 80px;
+		padding-bottom: 100px;
+	}
+}
+
+@media (max-width: 575px) {
+	.testimonial-padding {
+		padding-top: 80px;
+		padding-bottom: 50px;
+	}
+}
+
+.testimonial-area .about-caption {
+	border-bottom: 1px solid #F2F2F2;
+}
+
+.testimonial-area .testimonial-caption {
+	position: relative;
+}
+
+.testimonial-area .testimonial-caption img {
+	position: absolute;
+	top: -69px;
+	left: -80px;
+	z-index: -1;
+}
+
+@media (max-width: 575px) {
+	.testimonial-area .testimonial-caption img {
+		display: none;
+	}
+}
+
+.testimonial-area .testimonial-caption p {
+	font-size: 19px;
+	color: #010A44;
+	line-height: 1.6;
+	margin-bottom: 46px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.testimonial-area .testimonial-caption p {
+		margin-bottom: 40px;
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.testimonial-area .testimonial-caption p {
+		width: 99%;
+	}
+}
+
+@media (max-width: 575px) {
+	.testimonial-area .testimonial-caption p {
+		margin-bottom: 33px;
+	}
+}
+
+.testimonial-area .single-testimonial {
+	padding: 100px 10px 0 100px;
+}
+
+@media (max-width: 575px) {
+	.testimonial-area .single-testimonial {
+		padding: 11px 16px 0 18px;
+	}
+}
+
+.testimonial-area .rattiong-caption span {
+	color: #06080a;
+	font-size: 24px;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-family: "Josefin Sans", sans-serif;
+}
+
+.testimonial-area .rattiong-caption span span {
+	color: #767676;
+	font-size: 16px;
+	text-transform: capitalize;
+	padding-left: 15px;
+}
+
+.testimonial-area .founder-text span {
+	color: #1D2547;
+	font-weight: 500;
+	line-height: 1.5;
+	font-size: 22px;
+}
+
+.testimonial-area .founder-text p {
+	color: #646D77;
+	font-size: 14px;
+}
+
+@media (max-width: 575px) {
+	.testimonial-area .founder-text p {
+		font-size: 12px;
+	}
+}
+
+.h1-testimonial-active button.slick-arrow {
+	position: absolute;
+	border: 0;
+	padding: 10px;
+	cursor: pointer;
+	background: none;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	-o-transition: .4s;
+	transition: .4s;
+	right: 77px;
+	margin: 0 10px;
+	font-size: 20px;
+	color: rgba(253, 143, 95, 0.3);
+	bottom: 0px;
+	z-index: 1000;
+	transform: rotate(45deg);
+}
+
+.h1-testimonial-active button.slick-arrow:hover {
+	color: #BE9278;
+}
+
+.h1-testimonial-active button.slick-prev {
+	right: -10px;
+	transform: rotate(0deg);
+}
+
+.h1-testimonial-active button.slick-next {
+	right: -10px;
+	transform: rotate(0deg); 
+}
+
+.h1-testimonial-active.dot-style .slick-dots {
+	bottom: 4%;
+	right: 41px;
+	position: absolute;
+}
+
+.h1-testimonial-active.dot-style .slick-dots li {
+	display: inline-block;
+}
+
+.h1-testimonial-active.dot-style .slick-dots button {
+	margin-right: 7px;
+	cursor: pointer;
+	background: none;
+	color: #000;
+	border: 0;
+	font-size: 16px;
+	padding: 0;
+}
+
+.h1-testimonial-active.dot-style .slick-active button {
+	color: #BE9278;
+}
+
+.slick-initialized .slick-slide {
+	outline: 0;
+}
+
+.testimonial-speaker{
+    color: #1D2547;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 22px;
+}
+
+  </style>
+  </head>
+  <body>
+
+    <section class="testimonial-area testimonial-padding fix">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class=" col-lg-9">
+            <div class="about-caption pb-bottom">
+              <div class="h1-testimonial-active dot-style slider">
+
+                <!-- <button type="button" class="slick-prev slick-arrow" style="display: block;">
+                  <i class="fa fa-arrow-left"></i>
+                </button> -->
+
+                  <div class="slide">
+                    <img src="https://technext.github.io/equipo/assets/img/icon/quotes-sign.png" alt="qoutes-img">
+                    <div class="carousel-caption">
+                        <p>Absolutely love my new dress. As it fits really really well to me. The process of going through getting the dress was really straightforward. Overall I am absolutely delighted with the dress.</p> 
+                        
+                        <div class="testimonial-speaker">
+                          <!-- <div class="speaker-image">
+                            <img src="https://i.imgur.com/lE89Aey.jpg" class="img-fluid">
+                          </div> -->
+                          
+                          <div class="speaker-text">
+                            <div id="image-caption">- Deepa Shetty</div>
+                          </div>
+                          
+                        </div>
+                    </div>
+                  </div>
+
+
+                  <div class="slide">
+                    <img src="https://technext.github.io/equipo/assets/img/icon/quotes-sign.png" alt="qoutes-img">
+                    <div class="carousel-caption">
+                        <p>This is the best chaniya choli I've ever owned and get I compliments all the time I wear it. Kamlesh is going to be the ONLY maker I am going to use moving forward. </p> 
+                        
+                        <div class="testimonial-speaker">
+                          <!-- <div class="speaker-image">
+                            <img src="https://i.imgur.com/lE89Aey.jpg" class="img-fluid">
+                          </div> -->
+                          
+                          <div class="speaker-text">
+                            <div id="image-caption">- Nick Doe</div>
+                          </div>
+                          
+                        </div>
+                    </div>
+                  </div>
+
+
+                  <div class="slide">
+                    <img src="https://technext.github.io/equipo/assets/img/icon/quotes-sign.png" alt="qoutes-img">
+                    <div class="carousel-caption">
+                        <p>Received my blouse today, I am most pleased with the results, great fit, extremely happy with the fabric choice, great sleeve length and lovely neck line. Wonderful item once again, very pleased. Thank You!</p> 
+                        
+                        <div class="testimonial-speaker">
+                          <!-- <div class="speaker-image">
+                            <img src="https://i.imgur.com/lE89Aey.jpg" class="img-fluid">
+                          </div> -->
+                          
+                          <div class="speaker-text">
+                            <div id="image-caption">- Nick Doe</div>
+                          </div>
+                          
+                        </div>
+                    </div>
+                  </div>
+
+                  <!-- <button type="button" class="slick-next slick-arrow" style="display: block;">
+                    <i class="fa fa-arrow-right"></i>
+                  </button> -->
+
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      window.onload=function(){
+  $('.slider').slick({
+  autoplay:true,
+  autoplaySpeed: 6000,
+  arrows:true,
+  dots: true,
+  // prevArrow: $('.button.slick-arrow'),
+  // nextArrow: $('.button.slick-arrow'),
+  prevArrow: $('.slick-prev slick-arrow'),
+  nextArrow: $('.slick-next slick-arrow'),
+  });
+};
+
+    </script>
+  <!-- <script src="../slick-1.8.1/slick/slick.min.js"></script> -->
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  
+  <script src="../slick-1.8.1/slick/slick.js"></script>
+  </body>
+</html>

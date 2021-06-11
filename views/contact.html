@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+    
+    <link rel="stylesheet" href="../css/contact.css">
+    
+    <title>Beauty Art Ladies Tailor</title>
+  </head>
+
+<body>
+
+    <!-- Preload Symbol -->
+    <div class="preload-symbol"></div>
+    <!-- Preload Symbol End-->
+
+    <!-- Back To Top Button -->
+    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button" style="display: none;">
+        <i class="fa fa-caret-up"></i>
+    </a>
+    <!-- Back To Top Button End-->
+  
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom navbar-light">
+        <a class="navbar-brand" href="../index.html">Beauty Art</a>
+        <button class="navbar-toggler" style="cursor: none;" type="button" data-toggle="collapse"
+            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="../index.html">Home</a>
+                <a class="nav-item nav-link" href="./about.html">About</a>
+                <a class="nav-item nav-link" href="./services.html">Services</a>
+                <a class="nav-item nav-link" href="./views/contact.html">Contact</a>
+                <a class="nav-item nav-link" href="#exampleModalCenter" id="block-color" data-toggle="modal" >Visit Us</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Section End -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Beauty Art Ladies Tailor</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            <b>Address:</b> <Address>Bellona Building No 1, Shop
+                No. 6/B, 90 Feet Road, Opp.
+                Shivaji Technical School, Naidu Colony, Ghatkopar(E), Mumbai, Maharashtra-400075</Address>
+            
+            <b>Contact No:</b>
+            +91 8108915151
+            </div>
+            <div class="modal-footer">
+            <button type="button" id="close-button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal End-->
+    
+    
+    <!-- Hero Image & Background -->
+    <div class="container-fluid hero-container">
+        <div class="layer">  
+            <div class="container">
+                <div class="row hero-row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="hero-caption">
+                            <img class="logo" src="../images/beautyart-logo.png" alt="beautyart-logo" width="80">
+                            <h1 class="hero-header">Contact</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Image & Background End -->
+
+    <!-- Contact Form -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="get-in-touch"> Get in Touch </h2>
+                </div>
+
+                <div class="col-lg-8">
+                    <form method="post" action="contact-db.php" autocomplete="off">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-inputs" name="message" id="msg" cols="30" rows="9" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Message'" placeholder="Enter Message" style="height: 50%;"></textarea>
+                                </div>
+                            </div>
+                        
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-inputs" type="text" name="name" id="name" onfocus="this.placeholder=''" onblur="this.placeholder='Enter your name'" placeholder="Enter your name">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-inputs" type="email" name="email" id="mail-id" onfocus="this.placeholder=''" onblur="this.placeholder='Enter email address'" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-inputs" type="text" name="subject" id="sub" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Subject'" placeholder="Enter Subject">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="button submit-button" name="Submit" id="Submit" onclick="contact-db.php">
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-3 side-contact-tab">
+                    <div class="contact-info">
+                        <span class="icon-span">
+                            <i class="fa fa-home icon-i"></i>
+                        </span>
+                        <div class="contact-details">
+                            <h3>Pantnagar, Ghatkopar(E)</h3>
+                            <p>Mumbai, MH 400075</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <span class="icon-span">
+                            <i class="fa fa-phone icon-i"></i>
+                        </span>
+                        <div class="contact-details">
+                            <h3>&nbsp;+91 8108915151</h3>
+                            <p>&nbsp;Mon to Fri 9am-8pm</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <span class="icon-span">
+                            <i class="fa fa-envelope icon-i"></i>
+                        </span>
+                        <div class="contact-details">
+                            <h3>kamleshjethwa71@gmail.com</h3>
+                            <p>Happy to help anytime!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Contact Form End-->
+   
+    <!-- Footer -->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-layer">
+          <div class="footer-start">
+            <div class="container">
+              <div class="row justify-content-end">
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-footer-caption" style="margin-bottom: 50px;">
+                        <div class="single-footer-caption" style="margin-bottom: 30px;">
+                            <!-- logo -->
+                            <div class="footer-shop-name" style="margin-bottom: 35px;">
+                              <a id="footer-navbar-brand" href="#">Beauty Art</a>
+                            </div>
+                            <div class="footer-tittle">
+                                <div class="footer-pera">
+                                    <p>Bellona Building No 1, Shop
+                                      <br> No. 6/B, 90 Feet Road, Opp.
+                                      <br>Shivaji Technical School, Naidu Colony, Ghatkopar(E), Mumbai, Maharashtra-400075</p>
+                                </div>
+                                <ul class="footer-ul">
+                                    <li class="number"><i class="fa fa-mobile mobile-icon"></i>&nbsp;+91 8108915151</li>
+                                </ul>
+                            </div>
+                            <!-- social -->
+                            <div class="footer-social">
+                              <a href="#" class="fa fa-whatsapp"></a>
+                              <a href="#" class="fa fa-facebook"></a>
+                              <a href="#" class="fa fa-twitter"></a>
+                              <a href="#" class="fa fa-google"></a>                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-footer-caption">
+                        <div class="footer-title">
+                            <h4>Our solutions</h4>
+                            <ul class="our-solution-ul">
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./services.html">Services</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+              <div class="footer-border">
+                  <div class="row align-items-center">
+                      <div class="col-xl-12 ">
+                          <div class="footer-copy-center">
+                              <p>
+                                &copy; 2021 Beauty Art Ladies Tailor . All rights reserved | Design by Niket.Jethwa
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="map">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=shivaji%20technical%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+              </iframe>
+              <br>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Ends -->
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <script src="../js/index.js"></script>
+
+</body>
+</html>

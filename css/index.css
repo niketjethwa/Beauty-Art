@@ -1,0 +1,1258 @@
+body {
+    margin: 0;
+    font-family: 'Josefin Sans';
+    /* font-family: "Montserrat",sans-serif; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+/* Preload Symbol CSS */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.preload-symbol {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+    background-image: url("../images/gifgit.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+/* Preload Symbol CSS End*/
+
+
+/* Back To Top Button CSS */
+#back-to-top {
+    background: #BE9278;
+    height: 50px;
+    width: 50px;
+    right: 31px;
+    bottom: 18px;
+    position: fixed;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 20px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 3px rgb(108 98 98 / 20%);
+    padding: 1%;
+    z-index: 500;
+}
+/* Back To Top Button CSS End */
+
+
+/* Navbar Section CSS*/
+.navbar-custom {
+    background-color: #f9fafc;
+    height: 80px;
+    margin: 0%;
+    padding: 0%;
+    top: 0;
+    z-index: 1030;
+    position: sticky;
+    /* overflow: auto; */
+}
+
+.navbar-custom .navbar-brand, .navbar-custom .navbar-brand:hover{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #BE9278;
+    font-weight: bold;
+    padding-left: 3%;
+}
+
+.navbar-nav {
+    width: 60%;
+    font-size: 18px;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: black;
+    padding: 5.2%;
+}
+
+#block-color{
+    background-color: #BE9278;
+    height: 5.5rem;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #BE9278;
+}
+/* Navbar Section End CSS*/
+
+/* Model CSS */
+#exampleModalLongTitle{
+    color: #BE9278;
+    font-weight: bold;
+}
+
+#close-button{
+    background-color: #BE9278;
+}
+/* Model CSS End*/
+
+/* Hero Image & Background CSS*/
+.logo{
+    margin-bottom: 10%;
+    animation: rotation 15s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+.hero-container{
+    min-height: 850px;
+    background-image: url("https://www.videotailor.com/wp-content/uploads/2018/09/maganificent-marooon-1920x1080.jpg");
+    /* background: rgb(0,0,255, 0.2); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    background-size: cover;
+    position: relative;
+    left: 0px;
+    top: 0px; 
+}
+
+.hero-container .layer{
+    background: rgb(0, 0, 35, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-img{
+    width: 628px;
+    height: 731px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    top: 200px;
+    z-index: 99;
+    /* animation: 1s ease-out 0.6s slideInFromRight; */
+}
+
+/* @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+} */
+
+.layer .row {
+    margin-top: 25%;
+    margin-left: -15px;
+    margin-right: -15px;
+    /* animation: 1s ease-out 0.6s slideInFromLeft; */
+}
+
+/* @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+} */
+
+.layer .col-xl-6, .col-lg-6{
+    max-width: 40%;
+    margin-left: -15px;
+}
+
+.hero-caption h1{
+    color: #fff;
+    font-family: 'Josefin Sans';
+    font-size: 56px;
+}
+
+.hero-caption p{
+    margin-bottom: 44px;
+    display: block;
+    color: #fff;
+    line-height: 30px;
+    font-size: 16px;
+    padding-right: 50px;
+}
+/* Hero Image & Background CSS End*/
+
+
+/* Client Area CSS*/
+.client-area{
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+  .client-area .single-offers .offers-img {
+    margin-bottom: 50px;
+    overflow: hidden;
+    margin-left: 10%;
+  }
+
+  .client-area .single-offers .offers-cap {
+    position: relative;
+  }
+
+.client-area .single-offers .offers-cap span {
+    border: 1px solid transparent;
+    position: absolute;
+    content: "1";
+    width: 35px;
+    height: 35px;
+    background: #c6a16e;
+    top: -5;
+    left: 0px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.client-area .single-offers .offers-cap h3 a{
+    font-family: 'Josefin Sans';
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    transition: .4s;
+    color: #101A31;
+    margin-left: 17%;
+    text-decoration: none;
+}
+
+.client-area .single-offers .offers-cap p{
+    font-family: "Montserrat",sans-serif;
+    color: #101a31; /* #10285d;*/
+    width: 75%;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    margin-left: 17%;
+}
+
+#client{
+    animation: fadeInUp 1s;
+    animation-delay: 0.2s;
+}
+
+/* #client{
+    animation: fadeInUp 1s;
+    animation-delay: 0.6s;
+}
+
+#client{
+    animation: fadeInUp 1s;
+    animation-delay: 0.6s;
+} */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,200px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+/* .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+} */
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+} 
+/* Client Area CSS End*/
+
+
+
+/* Visit Our Tailor CSS*/
+.visit-our-tailor{
+    position: relative;
+    align-items: center;
+    margin: 0px 10px;
+}   
+
+.visit-our-tailor::before{
+    position: absolute;
+    content: "";
+    background: #F2E1D9;
+    width: 68%;
+    height: 100%;
+    z-index: -9;
+    right: 0;
+    top: 0;
+}
+
+.visit-our-tailor .row  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .visit-our-tailor .column {
+    flex: 25%;
+    padding: 20px;
+  }
+  
+.right-side{
+    background-image: url("https://www.saree.com/pub/media/catalog/product/cache/30b7ee4e69b206476652a48e55946b81/c/c/ccbi1946a-ligth-brown-georgette-designer-multi-colored-embroidered-lehenga-choli.jpg");
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    height: 570px;
+}
+
+.visit-our-tailor .left-side {
+    width: 70%;
+    padding: 120px 20px 20px 60px;
+}
+
+.visit-our-tailor .left-side h2{
+    font-size: 56px;
+    display: block;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 22px;
+    text-transform: inherit;
+}
+
+.visit-our-tailor .left-side p{
+    color: #010A44;
+    line-height: 1.7;
+    font-size: 18px;
+}
+/* Visit Our Tailor CSS End*/
+
+
+/* Our Services CSS */
+.our-service{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    position: relative;
+    /* height: 300px; */
+}
+
+.our-service .col-xl-6, .col-lg-6 {
+    max-width: 80%;
+    margin-left: -15px;
+}
+
+.section-tittle h2 {
+    font-size: 53px;
+    display: block;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.our-service .service-icon{
+    padding-top: 4%;
+}
+
+.our-service .cat-cap h5{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 7%;
+    margin-top: 10%;
+    display: block;
+    text-transform: capitalize;
+}
+/* Our Services CSS End */
+
+
+
+/* Try Us CSS */
+.try-us {
+    background-color: rgba(255,255,255,0);
+    /* background-image: url("https://www.tailorontheroad.com.au/wp-content/uploads/2019/01/Home_Premium_Services.jpg"); */
+    background-image: url("https://secureservercdn.net/45.40.148.117/741.240.myftpupload.com/wp-content/uploads/2017/04/chalk.jpeg?time=1622847410");
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-right: 30px;
+    padding-bottom: 500px;
+    padding-left: 30px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-width: 0px 0px 0px 0px;
+    border-color: #eae9e9;
+    border-style: solid;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-y: bottom;
+}
+/* Try Us CSS End*/
+
+
+
+
+/* Footer CSS */
+.footer-wrapper {
+    background-image: url("../images/threads.jpg");
+    background-size: cover;
+}
+
+.footer-layer{
+    background: rgb(0, 0, 35, 0.7);
+    position: relative;
+    top: 0;
+}
+
+
+.footer-start{
+    padding-top: 90px;
+    padding-bottom: 20px;
+}
+
+#footer-navbar-brand, #footer-navbar-brand:hover{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #BE9278;
+    font-weight: bold;
+    padding: 0%;
+    text-decoration: none;
+}
+
+.footer-start .footer-tittle p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-start .footer-tittle ul li {
+    margin-bottom: 15px;
+}
+
+.number{
+    font-size: 18px;
+    color: #BE9278;
+    margin-bottom: 0px;
+    display: block;
+    list-style-type: none;
+}
+
+.number .mobile-icon{
+    color: #7fc7f7;
+    font-size: 22px;
+}
+
+.footer-start .footer-ul{
+    padding: 0%;
+}
+
+.footer-start .footer-title h4 {
+    color: #BE9278;
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.footer-start .footer-title .our-solution-ul{
+    padding: 0%;
+}
+
+.footer-start .footer-title ul li {
+    margin-bottom: 15px;
+    padding: 0%;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+.footer-start .footer-title ul li a{
+    color:#ffff;
+    text-decoration: none;
+}
+
+.footer-bottom .footer-border {
+    /* padding-top: 5%; */
+    padding-bottom: 1px;
+}
+
+.footer-copy-center {
+    text-align: center;
+    color: #ffff;
+}
+
+.footer-social .fa  {
+    padding: 6px;
+    font-size: 25px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .footer-social .fa:hover {
+      color: #fff;
+  }
+  
+  .fa-whatsapp {
+    background: #25d366;
+    color: #ffff;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: #ffff;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: #ffff;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: #ffff;
+  }
+
+  .map{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 7%;
+}
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:455px;
+    width:600px;
+}
+
+.gmap_canvas{
+    overflow:hidden;
+    background:none;
+    height:455px;
+    width:600px;
+}
+
+/* Footer CSS End */
+
+
+/* Scroll Up Animation */
+
+.hero-img[data-aos^=fade][data-aos^=fade] {
+    transition-delay: 0.6s;
+}
+
+.hero-caption[data-aos^=fade][data-aos^=fade] {
+    transition-delay: 0.9s;
+}
+
+
+[data-aos^=fade][data-aos^=fade] {
+    transition-delay: 0.3s;
+}
+/* Scroll Up Animation End*/
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 575px){
+    .visit-our-tailor::before {
+        position: unset;
+    }
+
+    #back-to-top{
+        right: 16px;
+        line-height: 37px;
+    }
+
+    .navbar-custom {
+        background-color: #f9fafc;
+        height: 55px;
+        z-index: 1030;
+        position: sticky;
+    }
+
+    .navbar-custom .navbar-brand{
+        font-size: 30px;
+        text-transform: uppercase;
+        padding-left: 3%;
+    }
+
+    #block-color{
+        display: none;
+    }
+
+    .navbar-light .navbar-toggler{
+        border: none;
+    }
+
+    .navbar-light .navbar-toggler:active,  .navbar-light .navbar-toggler:focus {
+        border: 1px #f9fafc;
+    }
+
+    .hero-container{
+        min-height: 400px;
+        position: relative;
+    }
+
+    .hero-img{
+        display: none;
+    }
+
+    .layer .row {
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+    .layer .col-xl-6, .col-lg-6 {
+        max-width: 100%;
+        margin-left: -15px;
+        padding-top: 5%;
+    }
+    
+    
+    .hero-caption h1{
+        color: #fff;
+        font-family: 'Josefin Sans';
+        font-size: 22px;
+    }
+
+    .hero-caption p{
+        margin-bottom: 44px;
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        padding-right: 20px;
+        padding-top: 5%;
+        line-height: inherit;
+    }
+
+    .collapse.show {
+        display: block;
+        background-color: #f9fafc;
+    }
+
+    .client-area{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .client-area .single-offers .offers-img {
+        margin-bottom: 50px;
+        overflow: hidden;
+        margin-left: 5%
+    }
+
+    .single-offers{
+        padding-top: 25%;
+    }
+
+    .visit-our-tailor {
+        flex-direction: column;
+    }
+
+
+    .visit-our-tailor .row {
+        flex-direction: column;
+        margin: 0%;
+    }
+
+    .visit-our-tailor .left-side {
+        width: 100%;
+        padding: 2%;
+    }
+
+    .right-side{
+        height: 300px;
+        /* margin-top: 10%; */
+    }
+
+    .visit-our-tailor .left-side h2{
+        font-size: 29px;
+        padding-top: 5%;
+    }
+
+    .visit-our-tailor .column {
+        flex: 25%;
+        padding: 15px;
+    }
+
+    .single-cat{
+        margin-bottom: 20%;
+    }
+
+    .our-service{
+        padding-top: 10px;
+    }
+    
+    .our-service .col-xl-6, .col-lg-6 {
+        max-width: 100%;
+        margin-left: -15px;
+    }
+    
+    .section-tittle h2 {
+        font-size: 35px;
+        display: block;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    .section-tittle p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .footer-layer {
+        position: initial;
+    }
+
+    .map{
+        display: none;
+        /* position: absolute;
+        bottom: 0;
+        left: 0;
+        top: 7%;
+        width: 100%; */
+    }
+
+    .try-us{
+        padding-bottom: 160px;
+    }
+  }
+
+
+
+
+
+  /* Mobile Landscape */
+  @media only screen and (min-width: 576px) and (max-width: 767px){
+    .visit-our-tailor::before {
+        position: unset;
+    }
+
+    #back-to-top{
+        right: 16px;
+        line-height: 37px;
+    }
+    .navbar-custom {
+        background-color: #f9fafc;
+        height: 58px;
+        z-index: 1030;
+    }
+
+    .collapse.show {
+        display: block;
+        background-color: #f9fafc;
+    }
+
+    #block-color{
+        display: none;
+    }
+
+    .hero-img{
+        display: none;
+    }
+
+    .layer .row {
+        margin-top: 10%;
+        margin-left: -15px;
+        margin-right: -15px;
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+
+    .layer .col-xl-6, .col-lg-6 {
+        max-width: 100%;
+        margin-left: -15px;
+    }
+
+    .hero-caption h1{
+        color: #fff;
+        font-family: 'Josefin Sans';
+        font-size: 33px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    .hero-caption p{
+        margin-bottom: 44px;
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        padding-right: 50px;
+    }
+
+    .hero-container {
+        min-height: 400px;
+    }
+
+    .client-area{
+        padding-top: 15%;
+        padding-bottom: 5%;
+    }
+
+    .client-area .single-offers .offers-img {
+        margin-bottom: 50px;
+        overflow: hidden;
+        margin-left: 5%
+    }
+
+    .single-offers{
+        padding-top: 25%;
+    }
+
+    .visit-tailor-area::before {
+        position: unset;
+    }
+    
+    .visit-our-tailor .row {
+        flex-direction: column;
+        margin: 0%;
+    }
+
+    .visit-our-tailor .left-side {
+        width: 100%;
+        padding: 2%;
+    }
+
+    .visit-our-tailor .left-side h2{
+        font-size: 45px;
+    }
+
+    .single-cat{
+        margin-bottom: 20%;
+    }
+
+    .our-service {
+        padding-top: 3%;
+        padding-bottom: 50px;
+        position: relative;
+    }
+
+    .section-tittle h2 {
+        font-size: 35px;
+        display: block;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    .map{
+        display: none;
+    }
+
+    .try-us{
+        padding-bottom: 200px;
+    }
+  }
+
+
+
+
+  /* Large Mobile Landscape */
+  @media only screen and (min-width: 768px) and (max-width: 991px){ 
+    .visit-our-tailor::before {
+        position: unset;
+    }
+
+    #back-to-top{
+        right: 16px;
+        line-height: 37px;
+    }
+
+    .navbar-custom {
+        background-color: #f9fafc;
+        height: 58px;
+        z-index: 1030;
+    }
+
+    .collapse.show {
+        display: block;
+        background-color: #f9fafc;
+    }
+
+    #block-color{
+        display: none;
+    }
+
+    .hero-img{
+        display: none;
+    }
+
+    .layer .col-xl-6, .col-lg-6 {
+        max-width: 100%;
+        margin-left: -15px;
+    }
+
+    .hero-caption h1{
+        color: #fff;
+        font-family: 'Josefin Sans';
+        font-size: 33px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    .hero-caption p{
+        margin-bottom: 44px;
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        padding-right: 50px;
+    }
+
+    .hero-container {
+        min-height: 500px;
+    }
+
+    .client-area{
+        padding-top: 2%;
+    }
+
+    .client-area .single-offers .offers-img {
+        margin-bottom: 50px;
+        overflow: hidden;
+        margin-left: 5%
+    }
+
+    .single-offers{
+        padding-top: 25%;
+    }
+
+    .visit-tailor-area::before {
+        position: unset;
+    }
+
+    .visit-our-tailor .row {
+        flex-direction: column;
+        margin: 0%;
+      }
+    
+    .visit-our-tailor .left-side {
+        width: 100%;
+        padding: 2%;
+    }
+
+    .visit-our-tailor .left-side h2{
+        font-size: 45px;
+    }
+
+    .single-cat{
+        margin-bottom: 20%;
+    }
+    
+    .our-service {
+        padding-top: 3%;
+        padding-bottom: 50px;
+        position: relative;
+    }
+
+    .section-tittle h2 {
+        font-size: 35px;
+        display: block;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    .map{
+        display: none;
+    }
+
+    .try-us{
+        padding-bottom: 200px;
+    }
+}
+
+
+
+
+    /* iPad */
+   @media only screen and (min-width: 992px) and (max-width: 1199px){
+
+    .navbar-nav {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .layer .col-xl-6, .col-lg-6 {
+        max-width: 50%;
+        margin-left: -15px;
+    }
+
+    .hero-img {
+        width: 547px;
+        height: 680px;
+        position: absolute;
+        /* bottom: -12px; */
+        right: 0px;
+        top: 250px;
+        z-index: 99;
+    }
+
+    .right-side{
+        height: 500px;
+        margin-top: 10%;
+    }
+
+    .map{
+        display: none;
+    }
+   }
+
+
+
+
+/* Testinomial CSS */
+.slider{
+    /* width:400px; */
+    height: max-content;
+    margin:20px auto;
+    text-align: center;
+    padding:20px;
+    color:white;
+  }
+  
+  .carousel-caption {
+      position: initial;
+      z-index: 10;
+      /* padding: 5rem 8rem; */
+      color: rgba(78, 77, 77, 0.856);
+      text-align: center;
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: bold;
+      line-height: 2rem;
+      margin-top: -8%;
+      margin-left: 10%;
+  }
+  
+  .carousel-caption p {
+      font-size: 19px;
+      color: #010A44;
+      line-height: 1.6;
+      margin-bottom: 46px;
+      text-align: initial;
+  }
+  
+  
+  .testimonial-padding {
+      padding-top: 70px;
+      padding-bottom: 100px;
+  }
+  
+  .fix {
+      overflow: hidden;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .testimonial-padding {
+          padding-top: 0px;
+          padding-bottom: 100px;
+      }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .testimonial-padding {
+          padding-top: 0px;
+          padding-bottom: 100px;
+      }
+  }
+  
+  @media (max-width: 575px) {
+      .testimonial-padding {
+          padding-top: 0px;
+          padding-bottom: 50px;
+      }
+  }
+  
+  .testimonial-area .about-caption {
+      border-bottom: 1px solid #F2F2F2;
+  }
+  
+  .testimonial-area .testimonial-caption {
+      position: relative;
+  }
+  
+  .testimonial-area .testimonial-caption img {
+      position: absolute;
+      top: -69px;
+      left: -80px;
+      z-index: -1;
+  }
+  
+  @media (max-width: 575px) {
+      .testimonial-area .testimonial-caption img {
+          display: none;
+      }
+  }
+  
+  .testimonial-area .testimonial-caption p {
+      font-size: 19px;
+      color: #010A44;
+      line-height: 1.6;
+      margin-bottom: 46px;
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .testimonial-area .testimonial-caption p {
+          margin-bottom: 40px;
+      }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .testimonial-area .testimonial-caption p {
+          width: 99%;
+      }
+  }
+  
+  @media (max-width: 575px) {
+      .testimonial-area .testimonial-caption p {
+          margin-bottom: 33px;
+      }
+  }
+  
+  .testimonial-area .single-testimonial {
+      padding: 100px 10px 0 100px;
+  }
+  
+  @media (max-width: 575px) {
+      .testimonial-area .single-testimonial {
+          padding: 11px 16px 0 18px;
+      }
+  }
+  
+  .testimonial-area .rattiong-caption span {
+      color: #06080a;
+      font-size: 24px;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-family: "Josefin Sans", sans-serif;
+  }
+  
+  .testimonial-area .rattiong-caption span span {
+      color: #767676;
+      font-size: 16px;
+      text-transform: capitalize;
+      padding-left: 15px;
+  }
+  
+  .testimonial-area .founder-text span {
+      color: #1D2547;
+      font-weight: 500;
+      line-height: 1.5;
+      font-size: 22px;
+  }
+  
+  .testimonial-area .founder-text p {
+      color: #646D77;
+      font-size: 14px;
+  }
+  
+  @media (max-width: 575px) {
+      .testimonial-area .founder-text p {
+          font-size: 12px;
+      }
+  }
+  
+  .h1-testimonial-active button.slick-arrow {
+      position: absolute;
+      border: 0;
+      padding: 10px;
+      cursor: pointer;
+      background: none;
+      -webkit-transition: .4s;
+      -moz-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+      right: 77px;
+      margin: 0 10px;
+      font-size: 20px;
+      color: rgba(253, 143, 95, 0.3);
+      bottom: 0px;
+      z-index: 1000;
+      transform: rotate(45deg);
+  }
+  
+  .h1-testimonial-active button.slick-arrow:hover {
+      color: #BE9278;
+  }
+  
+  .h1-testimonial-active button.slick-prev {
+      right: -10px;
+      transform: rotate(0deg);
+  }
+  
+  .h1-testimonial-active button.slick-next {
+      right: -10px;
+      transform: rotate(0deg); 
+  }
+  
+  .h1-testimonial-active.dot-style .slick-dots {
+      bottom: 4%;
+      right: 41px;
+      position: absolute;
+  }
+  
+  .h1-testimonial-active.dot-style .slick-dots li {
+      display: inline-block;
+  }
+  
+  .h1-testimonial-active.dot-style .slick-dots button {
+      margin-right: 7px;
+      cursor: pointer;
+      background: none;
+      color: #000;
+      border: 0;
+      font-size: 16px;
+      padding: 0;
+  }
+  
+  .h1-testimonial-active.dot-style .slick-active button {
+      color: #BE9278;
+  }
+  
+  .slick-initialized .slick-slide {
+      outline: 0;
+  }
+  
+  .testimonial-speaker{
+      color: #1D2547;
+      font-weight: 500;
+      line-height: 1.5;
+      font-size: 22px;
+  }
+/* Testinomial CSS End */
