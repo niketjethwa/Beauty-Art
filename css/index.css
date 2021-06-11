@@ -328,7 +328,8 @@ body {
   }
   
 .right-side{
-    background-image: url("https://www.saree.com/pub/media/catalog/product/cache/30b7ee4e69b206476652a48e55946b81/c/c/ccbi1946a-ligth-brown-georgette-designer-multi-colored-embroidered-lehenga-choli.jpg");
+    /* background-image: url("https://www.saree.com/pub/media/catalog/product/cache/30b7ee4e69b206476652a48e55946b81/c/c/ccbi1946a-ligth-brown-georgette-designer-multi-colored-embroidered-lehenga-choli.jpg"); */
+    background-image: url("../images/about-our-tailor-house.jpg");
     background-size: 100%;
     background-size: cover;
     background-repeat: no-repeat;
