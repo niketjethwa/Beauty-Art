@@ -1,2 +1,1 @@
 # Beauty-Art
-# Beauty-Art
